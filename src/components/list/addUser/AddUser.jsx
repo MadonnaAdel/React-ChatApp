@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import style from './AddUser.module.scss'
+import style from './addUser.module.scss'
 import { arrayUnion, collection, doc, getDoc, getDocs, query, serverTimestamp, setDoc, updateDoc, where } from 'firebase/firestore';
 import { db } from '../../../lib/firebase';
 import { useUserState } from '../../../lib/useUserState';
