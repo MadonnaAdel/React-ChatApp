@@ -1,0 +1,24 @@
+section {
+    .containerAuth {
+        width: 90vw;
+        height: 90vh;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+        .speritor {
+            width: 2px;
+            height: 80%;
+            background-color: rgba(255, 255, 255, 0.158);
+        }
+
+        .rightSec {
+            img {
+                width: 600px;
+                height: 600px;
+            }
+        }
+
+    }
+}

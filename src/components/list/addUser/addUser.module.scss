@@ -1,0 +1,103 @@
+.addUserSec {
+    background-color: rgba(0, 0, 0, 0.603);
+    padding: 15px;
+    border-radius: 10px;
+    width: max-content;
+    height: max-content;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 10;
+    transform: translate(-50%, -50%);
+
+    .search {
+        display: flex;
+        flex-direction: row; 
+        align-items: center;
+        gap: 10px;
+        flex-wrap: nowrap; 
+
+            input {
+                flex: 1;
+                padding: 10px 14px;
+                border-radius: 5px;
+                border: none;
+                outline: none;
+                background-color: rgba(97, 88, 88, 0.3);
+                color: #fff;
+                font-size: 16px;
+                min-width: 200px;
+
+                &::placeholder {
+                    color: rgba(255, 255, 255, 0.7);
+                }
+
+                &:focus {
+                    background-color: rgba(97, 88, 88, 0.45);
+                }
+            }
+
+            button {
+                padding: 10px 20px;
+                border: none;
+                border-radius: 5px;
+                background-color: #1a7d1f;
+                color: #fff;
+                font-size: 16px;
+                cursor: pointer;
+                transition: background-color 0.2s ease;
+                white-space: nowrap;
+
+                &:hover {
+                    background-color: #166d1b;
+                }
+            }
+        }
+
+        .users {
+            max-height: 300px;
+            overflow-y: auto;
+
+            .user {
+                margin-top: 10px;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                justify-content: space-between;
+                cursor: pointer;
+
+                div {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+
+                    img {
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 50%;
+                        object-fit: cover;
+                    }
+
+                    p {
+                        color: white;
+                        font-size: 16px;
+                        font-weight: 500;
+                       
+                    }
+                }
+
+                button {
+                    padding: 5px 10px;
+                    border: none;
+                    border-radius: 5px;
+                    background-color: #1a7d1f;
+                    color: white;
+                    font-size: 14px;
+                    cursor: pointer;
+                }
+            }
+        }
+
+
+    }

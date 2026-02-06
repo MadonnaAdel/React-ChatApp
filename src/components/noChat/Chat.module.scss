@@ -1,0 +1,19 @@
+.chatSec {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  border-inline: 1px solid rgba(255, 255, 255, 0.158);
+
+  .chatBody {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .noMessages {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,86 @@
+.userInfoSec {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+
+    .userInfo {
+        display: flex;
+        align-items: center;
+
+        img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+    }
+
+    .userActions {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 7px;
+
+        img {
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+        }
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+
+        .icon {
+            width: 25px;
+            height: 25px;
+            cursor: pointer;
+        }
+
+        .menu {
+            position: absolute;
+            top: 30px;
+            right: 0;
+            background-color:rgba(0, 0, 0, 0.603);
+            border: 1px solid #333;
+            border-radius: 10px;
+            padding: 8px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+            animation: fadeIn 0.2s ease-in-out;
+            z-index: 100;
+
+            button {
+                color: white;
+                background: transparent;
+                border: none;
+                cursor: pointer;
+                padding: 5px 10px;
+                text-align: left;
+                transition: 0.2s;
+
+                &:hover {
+                    background: #333;
+                    border-radius: 6px;
+                }
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-5px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    }
+
+}
